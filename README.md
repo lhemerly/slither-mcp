@@ -32,6 +32,26 @@ This repository contains a Model Context Protocol (MCP) server implementation fo
    python server.py
    ```
 
+## Using with Vs Code, Cursor, Claude, etc
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/slither-mcp.git
+   cd slither-mcp
+   ```
+
+2. Include the following in the MCP server configuration of the corresponding app:
+   ```json
+      "slitherMCP": {
+         "command": "uv",
+         "args": [
+            "run",
+            "path/to/slither-mcp.py"
+         ],
+         "env": {}
+      }
+   ```
+
 ## Usage
 
 The MCP server exposes the following tools:

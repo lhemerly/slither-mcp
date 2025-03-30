@@ -1,3 +1,10 @@
+# /// script
+# requires-python = ">=3.12"
+# dependencies = [
+#    "mcp[cli]>=1.6.0",
+#    "slither-analyzer>=0.11.0",]
+# ///
+
 from mcp.server.fastmcp import FastMCP
 from slither.slither import Slither
 from slither.analyses.data_dependency.data_dependency import is_dependent
@@ -346,3 +353,5 @@ def slither_check_properties(contract_name: str) -> str:
 
 if __name__ == "__main__":
     mcp.run()
+
+
